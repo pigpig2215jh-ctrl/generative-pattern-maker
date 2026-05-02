@@ -8,10 +8,10 @@ interface Props {
 }
 
 const MODES: { id: PatternMode; label: string; desc: string }[] = [
-  { id: 'flowParticle', label: 'Flow Particle', desc: '흐름 입자' },
+  { id: 'flowParticle', label: 'Flow particle', desc: '흐름 입자' },
   { id: 'voronoi',      label: 'Voronoi',        desc: '보로노이 파편' },
   { id: 'pixelSort',   label: 'Glitch',          desc: '픽셀 정렬' },
-  { id: 'ascii',        label: 'ASCII Art',      desc: 'ASCII 아트' },
+  { id: 'ascii',        label: 'ASCII art',      desc: 'ASCII 아트' },
   { id: 'halftone',     label: 'Halftone',       desc: '하프톤' },
 ];
 
@@ -74,7 +74,7 @@ export default function Controls({ params, onChange, disabled, onExport }: Props
           <Slider label="Entropy" sub="혼돈도" value={params.entropy} onChange={v => onChange({ entropy: v })} disabled={disabled} />
           <Slider label="Density" sub="밀도" value={params.density} onChange={v => onChange({ density: v })} disabled={disabled} />
           {params.mode === 'flowParticle' && (
-            <Slider label="Stroke Flow" sub="흐름 길이" value={params.strokeFlow} onChange={v => onChange({ strokeFlow: v })} disabled={disabled} />
+            <Slider label="Stroke flow" sub="흐름 길이" value={params.strokeFlow} onChange={v => onChange({ strokeFlow: v })} disabled={disabled} />
           )}
         </div>
       </div>

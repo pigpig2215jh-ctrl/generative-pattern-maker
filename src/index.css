@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "YMGMuncheGothic";
-  src: url("/fonts/YMGMuncheGothic-Regular.otf") format("opentype");
+  font-family: "SM3Regular";
+  src: url("/fonts/SM3-Regular-clean.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
   --mid: #ddd;
   --vivid: #6c2868;
   --small: 0.78em;
-  --font: "YMGMuncheGothic", "PPRightSerifMono", "Courier New", monospace;
+  --font: "SM3Regular", "PPRightSerifMono", "Courier New", monospace;
   --letter-spacing-ko: 0em; /* 전각 기준 자간 */
 }
 
