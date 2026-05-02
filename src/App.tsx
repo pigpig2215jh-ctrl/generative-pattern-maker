@@ -77,7 +77,7 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h1>Generative<br />Pattern Maker</h1>
+          <h1>Genpatt</h1>
         </div>
         <ImageUploader onImageData={handleImageData} isAnalyzing={isAnalyzing} />
         <Controls
