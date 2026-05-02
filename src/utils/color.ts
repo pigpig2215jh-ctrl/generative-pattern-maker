@@ -17,6 +17,10 @@ export function applyPalette(
 ): RGB {
   if (mode === 'quantized') return nearestPaletteColor(r, g, b, palette);
   if (mode === 'neon') return toNeon(r, g, b);
+  if (mode === 'grayscale') {
+    const gray = Math.round(0.299 * r + 0.587 * g + 0.114 * b);
+    return [gray, gray, gray];
+  }
   return [r, g, b];
 }
 

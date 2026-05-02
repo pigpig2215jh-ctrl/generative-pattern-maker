@@ -19,6 +19,7 @@ const PALETTES: { id: PaletteMode; label: string }[] = [
   { id: 'original',  label: 'Original' },
   { id: 'quantized', label: 'Quantized' },
   { id: 'neon',      label: 'Neon' },
+  { id: 'grayscale', label: 'Grayscale' },
 ];
 
 interface SliderProps {

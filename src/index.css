@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "ABCSyntMono";
-  src: url("/fonts/ABCSyntMono-Regular-Trial.woff2") format("woff2");
+  font-family: "PPRightSerifMono";
+  src: url("/fonts/PPRightSerifMono-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "SM3ShinShinMyungjo";
-  src: url("/fonts/SM3ShinMyungjo.otf") format("opentype");
+  font-family: "YMGMuncheGothic";
+  src: url("/fonts/YMGMuncheGothic-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -30,8 +30,8 @@
   --mid: #ddd;
   --vivid: #6c2868;
   --small: 0.78em;
-  --font: "SM3ShinShinMyungjo", "ABCSyntMono", "Courier New", monospace;
-  --letter-spacing-ko: -0.04em; /* 한글 자간 */
+  --font: "YMGMuncheGothic", "PPRightSerifMono", "Courier New", monospace;
+  --letter-spacing-ko: 0em; /* 전각 기준 자간 */
 }
 
 html, body {
@@ -41,6 +41,9 @@ html, body {
 body {
   font: 16px/1.4em var(--font);
   letter-spacing: var(--letter-spacing-ko);
+  word-spacing: 0.2em;        /* 띄어쓰기를 전각(1em) 너비에 맞춤 */
+  font-kerning: none;          /* 커닝 비활성화 → 균일한 자폭 */
+  font-feature-settings: "palt" 0; /* 비례 대체 글리프 비활성화 → 전각 고정 */
   background-color: var(--bg);
   color: var(--c1);
   -webkit-font-smoothing: antialiased;

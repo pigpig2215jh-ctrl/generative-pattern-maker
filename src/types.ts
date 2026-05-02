@@ -1,5 +1,5 @@
 export type PatternMode = 'flowParticle' | 'voronoi' | 'pixelSort' | 'ascii' | 'halftone';
-export type PaletteMode = 'original' | 'quantized' | 'neon';
+export type PaletteMode = 'original' | 'quantized' | 'neon' | 'grayscale';
 
 export interface PatternParams {
   mode: PatternMode;
